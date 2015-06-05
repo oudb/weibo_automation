@@ -43,7 +43,7 @@ class SinaClaws(object):
         if self.vdisplay is not None:
             self.vdisplay.stop()
 
-    def login(self, user_name=u"ouduobiao@qq.com", user_password=u"100200odb"):
+    def login(self, user_name=u"**", user_password=u"**"):
         self.browser.visit(u"http://www.weibo.com/login.php")
         if not self.browser.status_code.is_success():
             return False
